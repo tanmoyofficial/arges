@@ -105,7 +105,26 @@ $('.partner-logos').slick({
     slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 2000,
-    arrows: false
+    arrows: false,
+    responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    }
+  ]
 });
 
 
@@ -164,7 +183,7 @@ $('.our-service .contents').slick({
     slidesToScroll: 3,
     autoplay: false,
     autoplaySpeed: 3000,
-        responsive: [
+    responsive: [
     {
       breakpoint: 768,
       settings: {
@@ -182,5 +201,5 @@ $('.our-service .contents').slick({
         slidesToShow: 1
       }
     }
-  ]
+  ]  
 });
